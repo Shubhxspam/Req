@@ -78,7 +78,7 @@ async def chk(_, cb : CallbackQuery):
             InlineKeyboardButton("💬 Support", url="https://t.me/Mrshubh_1227")
         ]]
     )
-    add_user(m.from_user.id)
+    add_user(cb.from_user.id)
     await cb.edit_text(text="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powered By : @Mrshubh_1227 __**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
     
 
